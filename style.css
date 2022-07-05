@@ -2,7 +2,7 @@
 
 html,body{height: 100%;}
 
-body{
+*container {
     display: grid;
     grid-template-rows: auto-flow min-content;
     grid-template-columns:repeat(12,1fr);
@@ -15,21 +15,23 @@ grid-column-end: 13;
 background-color: rgb(188, 89, 195);
 padding: 20px;
 }
-aside nav{
+ aside nav{
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
-main{ 
-grid-column-start: 5;
-grid-column-end: 13;
+main article{ 
+grid-column-start:3;
+grid-column-end: 12;
 grid-row-start: 2;
 grid-row-end: 4;
 
 
 }
  
-img 1stflower,
+* 1stflower,
 5thflower{ grid-column-start: 1;
     grid-column-end: 5;
 } 
