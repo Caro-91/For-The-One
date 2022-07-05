@@ -33,10 +33,16 @@ grid-row-end: 4;
  
 * 1stflower,
 5thflower{ grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 2;
 } 
-2ndflower,6thflower{grid-column-start:4;
-grid-column-end:7;}
+2ndflower,6thflower{grid-column-start:2;
+grid-column-end:3;}
+* 3rdflower,7thflower{
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+
 
 div nav li a {
     text-decoration: none;
@@ -55,7 +61,7 @@ nav ul li{
     list-style: none;
     display:inline-block ;
  display: flex;
- float: left;
+ 
 }
 
 nav ul li a{
