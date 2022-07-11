@@ -1,6 +1,9 @@
-@media only screen and(min-width:1024px) {
-
-.large-3{width: 25%;}
+/*@media only screen and(min-width:1025px) {
+footer{
+    display: grid;
+    grid-template-columns:repeat (4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
 
 
 

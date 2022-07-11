@@ -3,36 +3,142 @@
     font-size: 16px;
 font-weight: 400;}
 
-   *{margin: 0%;
-text-decoration: none;}
+   
+html,body{ height: 100%;}
+html{-webkit-text-size-adjust:100% }
+*{ 
+    margin: 0%;
+padding: 0%;
+ box-sizing:border-box;
+}
 
-html,body{height: 100%;}
-html{-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
 
-*{-moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-box-sizing:border-box}
 
-*
-  @media only screen and (min-width:768px){
-    .samll-12{width:100%;} }
+/*body{display: grid;
+grid:auto-flow min-content/repeat(12,1fr);
+margin: 1em;
+grid-gap:1em;
+box-sizing:border-box;
+}*/
 
- .row{clear: both;}
- .column{float:left;}
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color: rgb(239, 194, 214);
+   color: black;
+}
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.navbar-links ul{margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a { 
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 1rem;
+}
+.navbar-links li:hover{ background-color: rgb(97, 94, 94);}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+
+
+
+.toggle-button bar{
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+}
+
+  @media (max-width:600px) {
+    .toggle-button{
+        display:flex;
+    }
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction:column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.cative{
+        display: flex;
+    }
+  }
+
+image {
+    display: block;
+    max-width: 100%;
+    
+  }
+main{display:block;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0,1)
+    -30px 0px 40px rgba(0,0,0,0,1);
+} 
 
 footer{
-    background-color: rgb(134, 101, 164);
-    font-size: 1.2;
+    background-color:rgb(239, 194, 214) ;
+    color: black;
+    padding: 2.5rem;
+    text-align: center;
 }
- h2{
-    font-family: 'Dancing script';
-  margin: 1rem 0 .3rem 0;
+
+ .company-div{
+margin-bottom: 1.875rem;
+
  }
-.clearfix::after{
-    content: "";
-    display: table;
-    clear:both;
+ 
+.location-div{
+ margin-bottom: 1.875rem;
 }
+ 
+.social-div{
+margin-bottom: 1.875rem;
+}
+.about-div{
+   margin-bottom: 1.875rem;
+
+
+}
+
+
+
 
 
 
