@@ -1,7 +1,9 @@
 
    body{ font-family:'Dancing Script',cursive;
-    font-size: 16px;
-font-weight: 400;}
+ font-size: 1.5rem;
+   
+font-weight: 400;
+background-color: rgba(130, 148, 151, 0.21);}
 
    
 html,body{ height: 100%;}
@@ -26,8 +28,8 @@ box-sizing:border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   background-color: rgb(239, 194, 214);
-   color: black;
+   background-color:rgb(234, 221, 221);
+    color: rgb(78, 33, 50);
 }
 .brand-title{
     font-size: 1.5rem;
@@ -48,7 +50,8 @@ box-sizing:border-box;
     color: black;
     padding: 1rem;
 }
-.navbar-links li:hover{ background-color: rgb(97, 94, 94);}
+.navbar-links li:hover{ background-color: rgb(252, 249, 252);
+transition:500ms ease ;}
 
 .toggle-button {
     position: absolute;
@@ -111,10 +114,15 @@ main{display:block;
     box-shadow: 30px 0px 40px rgba(0,0,0,0,1)
     -30px 0px 40px rgba(0,0,0,0,1);
 } 
+ h1{ font-display:bold;
+margin-bottom: 0;
+margin-top: 0;}
+p{
+padding-bottom: 20px;}
 
 footer{
-    background-color:rgb(239, 194, 214) ;
-    color: black;
+    background-color:rgb(78, 33, 50) ;
+    color: rgb(234, 221, 221);
     padding: 2.5rem;
     text-align: center;
 }
@@ -133,11 +141,12 @@ margin-bottom: 1.875rem;
 }
 .about-div{
    margin-bottom: 1.875rem;
-
-
 }
-
-
+.logo-div{
+    display: flex;
+    justify-content: center;
+    
+}
 
 
 
