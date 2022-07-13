@@ -47,7 +47,7 @@ box-sizing:border-box;
 .navbar-links li a { 
     text-decoration: none;
     display: block;
-    color: black;
+    color: rgb(48, 44, 44);
     padding: 1rem;
 }
 .navbar-links li:hover{ background-color: rgb(252, 249, 252);
@@ -57,7 +57,7 @@ transition:500ms ease ;}
     position: absolute;
     top: .75rem;
     right: 1rem;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -67,11 +67,11 @@ transition:500ms ease ;}
 
 
 
-.toggle-button bar{
+.toggle-button.bar{
     height: 3px;
     width: 100%;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgb(9, 8, 8);
 }
 
   @media (max-width:600px) {
@@ -80,6 +80,7 @@ transition:500ms ease ;}
     }
     .navbar-links{
         display: none;
+        width: 100%;
     }
 
     .navbar{
@@ -129,6 +130,7 @@ footer{
 
  .company-div{
 margin-bottom: 1.875rem;
+list-style: none;
 
  }
  
@@ -138,13 +140,16 @@ margin-bottom: 1.875rem;
  
 .social-div{
 margin-bottom: 1.875rem;
+list-style: none;
 }
 .about-div{
    margin-bottom: 1.875rem;
+   list-style: none;
 }
 .logo-div{
     display: flex;
     justify-content: center;
+   list-style: none;
     
 }
 

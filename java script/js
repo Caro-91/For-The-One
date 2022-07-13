@@ -1,1 +1,6 @@
-alert("mou")
+const toggle-Button = documnet.getElementByClassName('toggle-Button')[0]
+const navbar-Links = documnet.getElementByClassName('navbar-Links')[0]
+
+toggle-Button.addEventListener('click',=>{
+    navbar-Links.classList.toggle('active')
+})
