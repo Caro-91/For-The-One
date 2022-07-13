@@ -57,7 +57,7 @@ transition:500ms ease ;}
     position: absolute;
     top: .75rem;
     right: 1rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -65,16 +65,14 @@ transition:500ms ease ;}
 }
 
 
-
-
 .toggle-button.bar{
     height: 3px;
     width: 100%;
     border-radius: 10px;
-    background-color: rgb(9, 8, 8);
+    background-color: black;
 }
 
-  @media (max-width:600px) {
+  @media screen and (max-width:700px) {
     .toggle-button{
         display:flex;
     }
@@ -102,11 +100,7 @@ transition:500ms ease ;}
     }
   }
 
-image {
-    display: block;
-    max-width: 100%;
-    
-  }
+
 main{display:block;
     justify-content:center;
     align-items: center;
@@ -121,6 +115,18 @@ margin-top: 0;}
 p{
 padding-bottom: 20px;}
 
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+     justify-content: center;
+    background-color: rgb(78, 33, 50); 
+
+}
+.image-bar{
+    padding:5px;
+
+}
 footer{
     background-color:rgb(78, 33, 50) ;
     color: rgb(234, 221, 221);
