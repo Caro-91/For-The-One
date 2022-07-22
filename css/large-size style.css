@@ -4,4 +4,29 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(2,1fr);
     }
+    
+    /*-----Flower page-----*/
+     .hero{
+        display: grid;
+      grid-template-columns: auto auto auto;
+      column-gap: 20px;
+      text-align: center;
+     }
+     .box{
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: rgb(83, 79, 79);
+      
+     }
+
+     
+      
+
+
+
+
 }
+

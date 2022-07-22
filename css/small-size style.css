@@ -13,11 +13,30 @@ html,body{
     font-family:'Dancing Script',cursive;
 }
 
+@keyframes title{
+  0%{color: #FFF;}
+  25%{color:  rgb(201, 181, 191);}
+  50%{color: rgb(161, 54, 95);}
+  100%{color: rgb(78, 33, 50);}
+}
+.brand-title{
+  color:rgb(78, 33, 50);
+  animation-name: title;
+  animation-duration: 6s;
+  animation-delay: -2;
+  animation-direction: alternate;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+}
 body{ 
     font-family:'Dancing Script',cursive;
     font-size: 1.5rem;
     font-weight: 400;
     background-color: rgba(130, 148, 151, 0.21);
+}
+.main-image{
+  width: 100%;
+  height: auto;
 }
 
 main{
@@ -25,20 +44,47 @@ main{
     justify-content:center;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
+    border: #333;
     box-shadow: 30px 0px 40px rgba(0,0,0,0,1)
     -30px 0px 40px rgba(0,0,0,0,1);
-} 
+  }
+  @keyframes p-h{
+  0%{background-color:rgb(241, 236, 236);}
+  25%{background-color:  rgb(201, 181, 191);}
+  50%{background-color: rgb(220, 177, 193);}
+  100%{background-color: rgb(235, 142, 177);}
+    }
+    .p-h-div{
+      border: 2px solid rgb(153, 151, 151);
+      border-radius: 12px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      background-color:rgb(189, 187, 188);
+      animation-name:p-h;
+      animation-duration: 6s;
+      animation-direction: alternate;
+      animation-timing-function:ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
 h1 {
     font-display:bold;
     margin-bottom: 0;
     margin-top: 0;
+}
+h3{
+  border: 2px solid rgb(121, 107, 107);
+    border-radius: 12px;
+    padding: 5px;
 }
 p {
     padding-bottom: 20px;
 }
 .container{
     display: flex;
+    border: 2px solid rgb(121, 107, 107);
+    border-radius: 12px;
+    margin-bottom: 20px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -70,12 +116,19 @@ footer{
 .about-div{
    margin-bottom: 1.875rem;
    list-style: none;
-}
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+} 
+
+
 .logo-div{
     display: flex;
-    justify-content: center;
-   list-style: none;
+    align-items: center;
+   justify-content: center;
+   text-align: center;
 }
+   
 
 @media screen and (max-width: 768px) {
    
@@ -219,3 +272,26 @@ footer{
      border-bottom: 1px solid rgb(92, 88, 88);
    }
  }
+ 
+ .hero{
+display:flex ;
+background-image: url(/image/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+.box{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.box:hover{
+  color: rgb(145, 140, 140);
+  align-items: center;
+  justify-content: center;
+  
+}
