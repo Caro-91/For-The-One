@@ -285,7 +285,21 @@ text-align: center;
 align-items: center;
 justify-content: center;
 }
+/*----style cart -----*/
+.car{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  
+  border: 5px solid rgb(71, 67, 67);
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 20px;
 
+
+}
 
 .box{
   margin-top: 20px;
