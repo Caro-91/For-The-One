@@ -32,7 +32,6 @@ body{
     font-family:'Dancing Script',cursive;
     font-size: 1.5rem;
     font-weight: 400;
-    background-color: rgba(130, 148, 151, 0.21);
 }
 .main-image{
   width: 100%;
@@ -65,6 +64,7 @@ main{
       animation-direction: alternate;
       animation-timing-function:ease-in-out;
       animation-iteration-count: infinite;
+  
     }
 
 h1 {
@@ -89,6 +89,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(201, 181, 191); 
+  
 }
 .image-bar{
     padding:5px;
@@ -285,9 +286,16 @@ align-items: center;
 justify-content: center;
 }
 
+
 .box{
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: #333;
+
 }
 .box:hover{
   color: rgb(145, 140, 140);

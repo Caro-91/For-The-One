@@ -31,29 +31,37 @@
           </header>
 
           <main class="hero">
+            <form action="/action-page.php" id="form" style="display:none">
+              <div class="x"><image src="image/80-805814_x-button-svg-png-red-x-circle-icon.png" hight="20px" width="20px"> </div>
+              <label for="name" >Send to (first and last name) </label><br>
+              <input type="text" id="name" name="name"><br>
+
+              <label for="address">send to (address)</label><br>
+              <input type="text" id="address" name="address"><br><br>
+
+              <label for="message">Message</label><br>
+              <input type="text" id="message" name="message"><br><br>
+
+              <input type="submit" value="Submit">
+            </form>
+
             <div class="box"><img src="image/cute.jpeg" alt="bouquet">
-              <button type="flower-button" <h3> Cute Bouquet
-              <small>30$</small></h3>
-            </div>
+              <button type="flowername-button" onclick="document.getElementById('form').style.display='block'">Cute Bouquet<br><small>30$</small></button> </div>
+              
             <div class="box"><img src="image/blue.jpeg" alt="bouquet">
-              <h3>Mix of blue 
-              <small>40$</small></h3>
-            </div>
+              <button type="flowername-button"  onclick="document.getElementById('form').style.display='block'"> Mix of blue<br> <small>40$</small></butto></div>
+
             <div class="box"><img src="image/sunflower.jpg" alt="bouquet">
-              <h3>Sunflower
-              <small>50$</small></h3>
-            </div>
+              <button type="flowername-button" onclick="document.getElementById('form').style.display='block'">  Sunflower <br><small>50$</small></button> </div>
+
               <div class="box"><img src="image/pinkbeauty.jpg" alt="bouquet">
-              <h3>Pink beauty
-              <small>80$</small></h3>
-               </div>
+                <button type="flowername-button"onclick="document.getElementById('form').style.display='block'"> Pink beauty<br><small>80$</small></button></div>
+
             <div class="box"><img src="image/yellowandorange.jpg" alt="bouquet">
-              <h3>yellow and orange
-              <small>40$</small></h3>
-            </div>
+              <button type="flowername-button" onclick="document.getElementById('form').style.display='block'">Yellow and orange<br> <small>40$</small></button></div>
+
             <div class="box"><img src="image/purple.jpeg" alt="bouquet">
-              <h3>Purple Beauty
-              <small>69$</small></h3>
+              <button type="flowername-button" onclick="document.getElementById('form').style.display='block'">Purple Beauty<br> <small>69$</small></button> 
             </div>
           </main>
 

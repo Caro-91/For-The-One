@@ -1,6 +1,9 @@
-const toggle-Button = documnet.getElementByClassName('toggle-Button')[0]
-const navbar-Links = documnet.getElementByClassName('navbar-Links')[0]
+/*function flowerFunction(){
+    var x= documnet.getElementById (flowerbtn);
+    x.diabled=true
+}*/
 
-toggle-Button.addEventListener('click',=>{
-    navbar-Links.classList.toggle('active')
-})
+/*function btnfunction(){
+ onclick ="document.getElementById(form).style.dysplay='block'"
+   
+}*/
