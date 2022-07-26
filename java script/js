@@ -1,9 +1,16 @@
-/*function flowerFunction(){
-    var x= documnet.getElementById (flowerbtn);
-    x.diabled=true
-}*/
+/*let increment = () => {
+    console.log("increment");
+};
+let decrement = () => {};
+let update = () => {};*/
 
-/*function btnfunction(){
- onclick ="document.getElementById(form).style.dysplay='block'"
-   
-}*/
+/*let links = document.querySelectorAll(".tag");
+links.forEach(function(link){
+link.setAttribute("target","_blank")
+});*/
+document.body.innerHTML = '<h1> hello world</h1>';
+
+let links = document.querySelectorAll(".tag");
+    links.forEach(function(link){
+    link.setAttribute("target","_blank")
+    });
