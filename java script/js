@@ -1,16 +1,22 @@
-/*let increment = () => {
-    console.log("increment");
-};
-let decrement = () => {};
-let update = () => {};*/
 
-/*let links = document.querySelectorAll(".tag");
-links.forEach(function(link){
-link.setAttribute("target","_blank")
-});*/
-document.body.innerHTML = '<h1> hello world</h1>';
 
-let links = document.querySelectorAll(".tag");
-    links.forEach(function(link){
-    link.setAttribute("target","_blank")
-    });
+ window.addEventListener("DOMContentLoaded",function(e){
+    const orderButtons = document.querySelectorAll("button[data-order]"); 
+    
+    orderButtons.forEach (function(button){
+      button.addEventListener("click",function(e) {
+       const button = e.currentTarget;
+        const container = button.ParentNode;
+        const order = {
+        id : button.getAttribute("data-order"),
+        title : container.querySelector(".title").innertext,
+        price : container.querySelector(".price").innertext,
+        desc : container.querySelector(".desc").innertext,
+    };
+       localStorage.setItem("order",JSON.stringify(order));
+       const url = window.location.href.replace("flowerpage.html","cart.html");
+        window.location.href = url;
+       });
+
+      });
+         });

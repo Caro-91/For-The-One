@@ -24,7 +24,7 @@
               </label>
               <ul class="menu">
                 <li><a href="index.html" class="tag">Home</a></li>
-                <li><a href="~/Documnets/CaroDevDIY/ForTheOne/flower page.html" class="tag">Flowers</a></li>
+                <li><a href="flowerpage.html" class="tag">Flowers</a></li>
                 <li><a href="cart.html" class="tag"><div class="cart-box"><i class="bi bi-cart2"></i><div class="cart-amount">0</div>
                 </div></a></li>
               </ul>
@@ -34,35 +34,55 @@
           <main class="hero">
             
 
-            <div class="box"><img src="image/cute.jpeg" alt="bouquet"><a href="cart.html">Cute Bouquet</a> <small>30$</small>
-              <div class="details"><button onclick="decrement()"><i class="bi bi-dash"></i></button>
-                <div class="quantity">0</div><button onclick="increment()"> <i class="bi bi-plus"></i></button>
-              </div></div>
+            <div class="flower">
+              <img src="image/cute.jpeg" alt="bouquet"/>
+              <div class="title">Red Rose</div>
+              <div class="price">30$</div>
+              <p class="desc">cute flowers  with pink</p>
+              <button data-order="Cute Bouquet">Order</button>
+            </div>
               
-            <div class="box"><img src="image/blue.jpeg" alt="bouquet"><a href="cart.html">Mix of blue </a><small>40$</small>
-               <div class="details"><button onclick="decrement()"><i class="bi bi-dash"></i></button><div class="quantity">0</div>
-               <button onclick="increment()"><i class="bi bi-plus"></i></button>
-               </div></div>
+            <div class="flower">
+              <img src="image/blue.jpeg" alt="bouquet"/>
+              <div class="title">Mix of blue</div> 
+              <div class="price">40$</div>
+              <p class="desc">cute flowers  with pink</p>
+              <button data-order="Mix of blue">Order</button>
+            </div>
 
-            <div class="box"><img src="image/sunflower.jpg" alt="bouquet"><a href="cart.html">Sunflower</a><small>50$</small>
-               <div class="details"><button onclick="decrement()"><i class="bi bi-dash"></i></button>
-               <div class="quantity">0</div> 
-               <button onclick="increment()"><i class="bi bi-plus"></i></button>
-               </div></div>
+            <div class="flower">
+              <img src="image/sunflower.jpg" alt="bouquet"/>
+              <div class="title">Sunflower</div> 
+              <div class="price">50$</div>
+              <p class="desc">cute flowers  with pink</p>
+              <button data-order="Sunflower">Order</button>
+            </div>
 
-              <div class="box"><img src="image/pinkbeauty.jpg" alt="bouquet"><a href="cart.html">Pink beauty</a><small>80$</small>
-                <div class="details"><button onclick="decrement()"><i class="bi bi-dash"></i></button><div class="quantity">0</div> 
-                <button onclick="increment()"><i class="bi bi-plus"></i></button>
-                </div></div>
+              <div class="flowe">
+                <img src="image/pinkbeauty.jpg" alt="bouquet">
+                <div class="title">Pink beauty</div>
+                <div class="price">80$</div>
+                <p class="desc">cute flowers  with pink</p>
+                <button data-order="pinkbeauty">Order</button>
+              </div>
 
-            <div class="box"><img src="image/yellowandorange.jpg" alt="bouquet"><a href="cart.html">Yellow and orange</a><small>40$</small>
-             <div class="details"><button onclick="decrement()"><i class="bi bi-dash"></i></button><div class="quantity">0</div>
-             <button onclick="increment()"><i class="bi bi-plus"></i></button></div></div>
+            <div class="flower">
+              <img src="image/yellowandorange.jpg" alt="bouquet"/>
+              <div class="title">Yellow and orange</div>
+              <div class="price">40$</div>
+              <p class="desc">cute flowers  with pink</p>
+              <button data-order="yellowandorange">Order</button>
+            </div>
 
-            <div class="box"><img src="image/purple.jpeg" alt="bouquet"><a href="cart.html">Purple Beauty </a> <small>69$</small>
-             <div class="details" ><button onclick="decrement()"><i class="bi bi-dash"></i></button>
-               <div class="quantity">0</div> <button onclick="increment()"><i class="bi bi-plus"></i></button>
-             </div></div>
+             
+            <div class="flower">
+              <img src="image/purple.jpeg" alt="bouquet"/>
+              <div class="title">Purple Beauty </div> 
+              <div class="price">69$</div>
+              <p class="desc">cute flowers  with pink</p>
+              <button data-order="purple Beauty">Order</button>
+            </div>
+             
           </main>
 
           <footer class="footer">
@@ -98,7 +118,30 @@
               <p2>@2022.all rights reserved.</p2>
             </div>
           </footer>
-    </body>
-      <script src="../Hello-world/java script/js"></script>
+    
 
-    </html>
+      <script >
+        window.addEventListener("DOMContentLoaded",function(e){
+          console.log('working')
+          const orderButtons = document.querySelectorAll("button[data-order]"); 
+
+          orderButtons.forEach (function(button) {
+            button.addEventListener("click", function(e) {
+              const button = e.currentTarget;
+              const container = button.parentNode;
+              console.log('container', container.querySelector(".title"))
+              const order = {
+                id : button.getAttribute("data-order"),
+                title : container.querySelector(".title").innerText,
+                price : container.querySelector(".price").innerText,
+                desc : container.querySelector(".desc").innerText,
+              };
+              localStorage.setItem("order", JSON.stringify(order));
+              const url = window.location.href.replace("flowerpage.html","cart.html");
+                window.location.href = url;
+              });
+            });
+          });
+      </script>
+    </body>
+</html>
