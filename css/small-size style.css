@@ -4,6 +4,9 @@ html{-webkit-text-size-adjust:100% }
 html,body{ 
     height: 100%;
     font-family:'Dancing Script',cursive;
+    font-size: 1.3rem;
+    font-weight: 400;
+    
 }
 
 *{ 
@@ -36,19 +39,15 @@ html,body{
   margin-bottom: 2px;
   
 }
-.cart-amount{
+/*.cart-amount{
 position: absolute;
 top: -2px;
 right:0;
 background-color:rgb(90, 11, 37) ;
-font-size: 16px;
+font-size: 16px;*/
 
-}
-body{ 
-    font-family:'Dancing Script',cursive;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
+
+
 
 /*-------------home page style---------------*/
 .main-image{
@@ -312,7 +311,7 @@ text-align: center;
 align-items: center;
 justify-content: center;
 }
-.box{
+.flower{
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -322,9 +321,7 @@ justify-content: center;
   box-shadow: #333;
 
 }
-.details{
-  display: flex;
-}
+
 /*----------flower page end------------*/
 
 
@@ -335,20 +332,19 @@ justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   justify-items: center;
-  border: 2px solid rgb(163, 161, 161);
-    border-radius: 12px;
-    padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+ margin-left: 30px ;
 }
+.cart-order{ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 2px;}
 
-#name,#address,#message,#submit{
-  display: flex;
-  border: 2px solid rgb(71, 67, 67);
-    border-radius: 12px;
-    padding: 5px;
-
-}
+ 
+  
 
 /*--------------style cartpage end-----------------*/
 

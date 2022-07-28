@@ -4,55 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet"/>
     <title>For the One | Cart </title>
 </head>   
 
-<link rel="stylesheet" href="css/normalize.css" type="text/css" />
-<link rel="stylesheet" href="css/small-size style.css"type="text/css"/>
-<link rel="stylesheet" href="css/medium-size style.css"type="text/css" />
-<link rel="stylesheet" href="css/large-size style.css"type="text/css"/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-<body>
-    <header>
-        <nav class="nav-bar">
-          <div class="brand-title">FOR THE ONE</div>
-          <input id="menu-toggle" type="checkbox" />
-          <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-          </label>
-          <ul class="menu">
-            <li><a href="index.html" class="tag">Home</a></li>
-            <li><a href="flowerpage.html" class="tag">Flowers</a></li>
-            <li><a href="cart.html" class="tag"><div class="cart-box"><i class="bi bi-cart2"></i><div class="cart-amount">0</div>
-            </div></a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      <div class="cart">
-      <form action="/action-page.php" id="form">
-        <label for="name"  >Send to (first and last name) </label><br>
-        <input type="text" id="name" name="name"><br>
+ <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+ <link rel="stylesheet" href="css/small-size style.css"type="text/css"/>
+ <link rel="stylesheet" href="css/medium-size style.css"type="text/css" />
+ <link rel="stylesheet" href="css/large-size style.css"type="text/css"/>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+ <body>
+  <header>
+   <nav class="nav-bar">
+    <div class="brand-title">FOR THE ONE</div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+      </label>
+    <ul class="menu">
+    <li><a href="index.html" class="tag">Home</a></li>
+    <li><a href="flowerpage.html" class="tag">Flowers</a></li>
+    <li><a href="cart.html" class="tag"><div class="cart-box"><i class="bi bi-cart2"></i>
+    </div></a></li>
+    </ul>
+    </nav>
+    </header>
+      <section class="cart">
+        
+         <h4>Order</h4>
+        <form action="http://localStorage|Cart/127.0.0.1" id="POST">
 
-        <label for="address">send to (address)</label><br>
-        <input type="text" id="address" name="address"><br><br>
+         <div class="cart-order">
+         <label for="name" > first name </label>
+         <input type="text" id="first-name" name="first-name"/></div>
 
-        <label for="message">Message</label><br>
-        <input type="text" id="message" name="message"><br><br>
+          <div class="cart-order">
+          <label for="last-name" >last name</label>
+          <input type="text" id="last-name" name="last-name"/>
+            </div>
 
-        <input id="submit" type="submit" value="Submit">
-      </form></div>
+          <div class=" cart-order">
+           <label for="address" >address</label>
+          <input type="text" id="adress" name="address"/><div>
 
+            <div class="cart-order">
+              <label for="state"> state</label>
+                <select id="state" name="state">
+                    <option value="" selected> select a state</option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arkansa">Arkansa</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="California"> California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="connecticut">connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois"> Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Iowa"> Iowa</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Maine">Maine</option>
+                    <option value=" Maryland"> Maryland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="New York">New York</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="North Dakota">North Dakota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value=" Oregon"> Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value=" Texas"> Texas</option>
+                    <option value=" Utah"> Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value=" Virginia"> Virginia</option>
+                    <option value="Washington">Washington</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming">Wyoming</option>
 
-      <footer class="footer">
+                  
+                </select></div>
+            
+                         
+                    <div class="cart-order">
+                    <label for="postal-code">postal code</label>
+                  <input type="text" id="postal- code" name="postal-code"/></div>
+
+                  <div class="cart-order" >
+                    <textarea name="comments" id="comments"  cols= 30 rows="10"></textarea>
+                  </div>
+                  
+                 <input type="reset" value="reset"/>
+                <input type="submit" value="order" />
+                                
+                
+        </form></section>
+    
+ 
+
+ 
+    <footer class="footer">
         <div class=" company-div">
           <h2>COMPANY</h2>
           <url class="company-url">
             <li class="company-li">Flower market</li>
             <li class="company-li">Design flowers</li>
             <li class="company-li">Fresh flowers</li>
-            <li class="company-li">Gifts</li>
+            <li class="company-li">Plants</li>
           </url>
         </div>
     
@@ -61,25 +139,45 @@
           <p2>5402Lyndon Av.</p2>
           <p2> Louisville,Ky</p2>
         </div>
-    
         <div class="social-div"> <h2>SOCIAL</h2>
-          <url class="social-url">
-            <li class="social-li">Email</li>
-            <li class="social-li">Facebook</li>
-            <li class="social-li">Instigram</li>
-          </url>
-        </div>
-
-        <div class="about-div">
-          <h2>ABOUT</h2>
-          <div class="logo-div" >
-            <img  class="flower-logo"src="image/For the One-logos_white.png" alt="logo">
+            <url class="social-url">
+              <li class="social-li">Email</li>
+              <li class="social-li">Facebook</li>
+              <li class="social-li">Instigram</li>
+            </url>
           </div>
-          <p2>@2022.all rights reserved.</p2>
-        </div>
-      </footer>
-     
+      
+          <div class="about-div">
+            <h2>ABOUT</h2>
+            <div class="logo-div">
+              <img  class="flower-logo"src="image/For the One-logos_white.png" alt="logo"/>
+            </div>
+            <p2>@2022.all rights reserved.</p2>
+          </div>
+        </footer>
     </body>
-    <script></script>
+    <script>
+        window.addEventListener("DOMContentLoaded",function(e){
+            const order = localStorage.getItem ("order");
+            if (order){
+                const flowerOrder = JSON.parse(order);
+
+                const flower = document.querySelector(".flower");
+
+                const title = flower.querySelector(".title");
+                const price = flower.querySelector(".price");
+                const desc = flower.querySelector(".desc");
+
+                title.innerText = flowerOrder.title;
+                price.innerText = flowerOrder.price;
+                desc.innerText = flowerOrder.desc;
+                 
+                const img = flower.querySelector("img");
+                img.setAttribute("scr",'images/${flowerOrder.id}.jpg');
+                img.setAttribute("alt",flowerOrder.title);
+            }
+
+        });
+    </script>
 
 </html>
