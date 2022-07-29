@@ -4,6 +4,9 @@ html{-webkit-text-size-adjust:100% }
 html,body{ 
     height: 100%;
     font-family:'Dancing Script',cursive;
+    font-size: 1.3rem;
+    font-weight: 400;
+    
 }
 
 *{ 
@@ -13,11 +16,43 @@ html,body{
     font-family:'Dancing Script',cursive;
 }
 
-body{ 
-    font-family:'Dancing Script',cursive;
-    font-size: 1.5rem;
-    font-weight: 400;
-    background-color: rgba(130, 148, 151, 0.21);
+@keyframes title{
+  0%{color: #FFF;}
+  25%{color:  rgb(201, 181, 191);}
+  50%{color: rgb(161, 54, 95);}
+  100%{color: rgb(78, 33, 50);}
+}
+.brand-title{
+  color:rgb(78, 33, 50);
+  animation-name: title;
+  animation-duration: 6s;
+  animation-delay: -2;
+  animation-direction: alternate;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+}
+.cart-box {
+  position: relative;
+  color:#FFF;
+  text-decoration: none;
+  margin-top:2px ;
+  margin-bottom: 2px;
+  
+}
+/*.cart-amount{
+position: absolute;
+top: -2px;
+right:0;
+background-color:rgb(90, 11, 37) ;
+font-size: 16px;*/
+
+
+
+
+/*-------------home page style---------------*/
+.main-image{
+  width: 100%;
+  height: auto;
 }
 
 main{
@@ -25,28 +60,61 @@ main{
     justify-content:center;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
+    border: #333;
     box-shadow: 30px 0px 40px rgba(0,0,0,0,1)
     -30px 0px 40px rgba(0,0,0,0,1);
-} 
+  }
+  @keyframes p-h{
+  0%{background-color:rgb(241, 236, 236);}
+  25%{background-color:  rgb(201, 181, 191);}
+  50%{background-color: rgb(220, 177, 193);}
+  100%{background-color: rgb(235, 142, 177);}
+    }
+    .p-h-div{
+      border: 2px solid rgb(153, 151, 151);
+      border-radius: 12px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      background-color:rgb(189, 187, 188);
+      animation-name:p-h;
+      animation-duration: 6s;
+      animation-direction: alternate;
+      animation-timing-function:ease-in-out;
+      animation-iteration-count: infinite;
+  
+    }
+
 h1 {
     font-display:bold;
     margin-bottom: 0;
     margin-top: 0;
+}
+h3{
+  border: 2px solid rgb(121, 107, 107);
+    border-radius: 12px;
+    padding: 5px;
 }
 p {
     padding-bottom: 20px;
 }
 .container{
     display: flex;
+    border: 2px solid rgb(121, 107, 107);
+    border-radius: 12px;
+    margin-bottom: 20px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(201, 181, 191); 
+  
 }
 .image-bar{
     padding:5px;
 }
+/*------------home page end________________*/
+
+
+/*----------------footer style--------------*/
 footer{
     background-color:rgb(78, 33, 50) ;
     color: rgb(234, 221, 221);
@@ -70,18 +138,25 @@ footer{
 .about-div{
    margin-bottom: 1.875rem;
    list-style: none;
-}
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+} 
+
+
 .logo-div{
     display: flex;
-    justify-content: center;
-   list-style: none;
+    align-items: center;
+   justify-content: center;
+   text-align: center;
 }
+/*-------------footer style end-------------*/
 
+   
+ /*-------------------------Menu Styles----------------*/
 @media screen and (max-width: 768px) {
    
 }
-
- /*-------------------------Menu Styles----------------*/
 
  .brand-title{
     font-size: 1.5rem;
@@ -173,7 +248,9 @@ footer{
  #menu-toggle:checked + .menu-button-container .menu-button::after {
    margin-top: 0px;
    transform: rotate(-405deg);
+
  }
+
  
  @media (max-width: 700px) {
    .menu-button-container {
@@ -219,3 +296,59 @@ footer{
      border-bottom: 1px solid rgb(92, 88, 88);
    }
  }
+ /*------------menu style end----------------*/
+
+
+ /*-----------flower page-----------------*/
+ .hero{
+display:flex ;
+background-image: url(/image/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+.flower{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: #333;
+
+}
+
+/*----------flower page end------------*/
+
+
+/*----style cart page-----*/
+.cart{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+ margin-left: 30px ;
+}
+.cart-order{ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 2px;}
+
+ 
+  
+
+/*--------------style cartpage end-----------------*/
+
+
+.form-field small {
+  color: red;
+}
