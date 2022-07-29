@@ -32,15 +32,31 @@
       <section class="cart">
         
          <h4>Order</h4>
-        <form action="http://localStorage|Cart/127.0.0.1" id="POST">
+         <div class="flower">
+            <img src=""/>
+            <div class="boxcart">
+                <div class="title"></div>
+            <div class="title"></div></div>
 
-         <div class="cart-order">
-         <label for="name" > first name </label>
-         <input type="text" id="first-name" name="first-name"/></div>
+            <p class=" desc"></p>
+         </div>
 
-          <div class="cart-order">
-          <label for="last-name" >last name</label>
-          <input type="text" id="last-name" name="last-name"/>
+        <form id="signup" class="form">
+
+            <div class="cart-order">
+                <label for="first-name" > first name </label>
+                <input type="text" id="first-name" name="first-name"/>
+            </div>
+
+            <div class="cart-order">
+            <label for="last-name" >last name</label>
+            <input type="text" id="last-name" name="last-name"/>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="off">
+                <small></small>
             </div>
 
           <div class=" cart-order">
@@ -114,11 +130,10 @@
                     <textarea name="comments" id="comments"  cols= 30 rows="10"></textarea>
                   </div>
                   
-                 <input type="reset" value="reset"/>
-                <input type="submit" value="order" />
+                <input class="orderBtn" type="submit" value="order" />
                                 
-                
-        </form></section>
+        </form>
+    </section>
     
  
 
@@ -156,28 +171,6 @@
           </div>
         </footer>
     </body>
-    <script>
-        window.addEventListener("DOMContentLoaded",function(e){
-            const order = localStorage.getItem ("order");
-            if (order){
-                const flowerOrder = JSON.parse(order);
-
-                const flower = document.querySelector(".flower");
-
-                const title = flower.querySelector(".title");
-                const price = flower.querySelector(".price");
-                const desc = flower.querySelector(".desc");
-
-                title.innerText = flowerOrder.title;
-                price.innerText = flowerOrder.price;
-                desc.innerText = flowerOrder.desc;
-                 
-                const img = flower.querySelector("img");
-                img.setAttribute("scr",'images/${flowerOrder.id}.jpg');
-                img.setAttribute("alt",flowerOrder.title);
-            }
-
-        });
-    </script>
+    <script src="/javascript/form.js"></script>
 
 </html>
