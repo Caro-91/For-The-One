@@ -46,3 +46,14 @@
       }
 
   });
+
+  let btn = document.querySelector(".gallery");
+  let div = document.querySelector(".container");
+
+  btn.addEventListener('click',() => {
+    if(div.style.display === 'none'){
+      div.style.display = 'flex';
+    }else{ div.style.display= 'none';}
+    })
+
+  
